@@ -8,7 +8,7 @@ export default function ScoreCard({ data }: any) {
     <div className="bg-gray-800 p-8 rounded-2xl shadow-lg">
       <h2 className="text-2xl font-semibold mb-6">Overview</h2>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-4 gap-6">
         <Card title="Resume Score" value={`${score?.overall_score}/100`} />
         <Card title="JD Match" value={`${jdMatch?.match_score}%`} />
         <Card title="Experience Score" value={score?.experience_score} />
